@@ -206,7 +206,6 @@ class Sort(object):
 
     NOTE: The number of objects returned may differ from the number of detections provided.
     """
-    bp()
     self.frame_count += 1
     # get predicted locations from existing trackers.
     trks = np.zeros((len(self.trackers), 5))
