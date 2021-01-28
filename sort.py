@@ -69,7 +69,6 @@ def convert_bbox_to_z(bbox):
   r = w / float(h)
   return np.array([x, y, s, r]).reshape((4, 1))
 
-@njit
 def convert_x_to_bbox(x,score=None):
   """
   Takes a bounding box in the centre form [x,y,s,r] and returns it in the form
